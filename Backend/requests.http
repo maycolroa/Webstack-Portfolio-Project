@@ -1,0 +1,25 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Rupi Kaur",
+  "age": "30",
+  "email": "Rupi@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+### 
+GET http://localhost:9000/api/users/6462080b4ebd0c0468f41eb9 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6462080b4ebd0c0468f41eb9 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "J. K. Rowling",
+  "age": "56",
+  "email": "jkRowlin@gmail.com"
+}
